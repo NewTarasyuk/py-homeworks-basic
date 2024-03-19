@@ -135,3 +135,13 @@ print(some_reviewer)
 some_reviewer1 = Reviewer("Сергей","Сергаев")
 some_reviewer1.cours_attached += ['Python']
 print(some_reviewer1)
+
+print(some_student < some_student_1)
+print(some_student_1 < some_student)
+print(some_student > some_student_1)
+print(some_student_1 > some_lecturer)
+
+print(some_lecturer < some_lecturer_1)
+print(some_lecturer < some_lecturer_1)
+print(some_lecturer > some_lecturer_1)
+print(some_lecturer > some_student_1)
