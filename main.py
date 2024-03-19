@@ -11,6 +11,12 @@ class Student:
     def add_courses(self, cours_name):
         self.finished_courses.append(cours_name)
 
+    def __lt__(self, other_lecturer):
+        if isinstance(other_lecturer, Lecturer):
+            return rate_asb(self.grades) < rate_asb(other_lecturer.grades)
+        else:
+            return None
+
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
             if course in student.grades:
